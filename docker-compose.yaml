@@ -1,0 +1,51 @@
+
+discovery:
+  image: puneethkumarck/eureka-server
+  ports:
+    - "8761:8761"
+
+configserver:
+  image: puneethkumarck/config-server
+  ports:
+    - "8000:8000"
+  links:
+    - discovery
+
+admin-server:
+  image: puneethkumarck/admin-server
+  ports:
+    - "8005:8005"
+  links:
+    - discovery
+
+
+github:
+  image: puneethkumarck/github-api
+  ports:
+    - "8002:8002"
+  links:
+    - configserver
+    - discovery
+
+youtube:
+  image: puneethkumarck/youtube-api
+  ports:
+     - "8003:8003"
+  links:
+    - configserver
+    - discovery
+
+youtube-kotlin:
+  image: puneethkumarck/youtube-api-kotlin
+  ports:
+    - "8004:8004"
+  links:
+    - configserver
+    - discovery
+
+zipkin-server:
+  image: puneethkumarck/zipkin-service
+  ports:
+    - "9411:9411"
+  links:
+    - discovery

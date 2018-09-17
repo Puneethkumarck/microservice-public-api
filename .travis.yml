@@ -1,0 +1,30 @@
+language: java
+jdk: oraclejdk8
+cache:
+  directories:
+    - $HOME/.m2/repository/
+env:
+  global:
+   - secure: jjU7lovFB8l7Eh3ZE9iudDVmZWErygWsBzDiUVuruIRuBRzpYFt6GP/ZvIfzSdW4PI0H/3fGgL4Ug9eALNBSnwHCHM2pb424wdrdykSvGCHIcgZ52ga9dNsX7/mjBgrMVHtjUHCW8BUQBeXPRA2uGDauAYl+iVWuKKWcFFqdZq0iSLvZP33Y3aYjYo6QS/N6MVobrh82uNWp63pEzfo60TKxsDOWS5yoxR1W4KCZ4tOveei0AZBVvstFn3oPKX3+wLHf3+UWCC6jNBTqEmKtH6mrPpOV1lDcX7XyGHoQIw9AwYToh/Fm6dAEzVmy1SZ1wFN26cWepwuR6iIhy8Cz/LsfAA6osVLSH4JAbImP1G+Sr5BsBc5ab6VLmMIzMVGKRDJn+aQ1tr8BbdIkXWVl8GoOgMbtAnjZqGY3cxnpL+/hIQsWYVVDp5RUFMjgiYGlU3LEvXAK0unzs0o3hmw7oc+2O8jPYeSDdsECzewqrFBipwTB5fY/Lns/s7GXOnuZn251TLxyNW+akpadBeUGRMQyh04QGXXNxra9P8Ttp2OKioFMD51WcVNaSA32uNkHiP+we6IK/NYE5TCHA3lsFBkktgpdV8QNRrfB4a4uGT+YVhRhcnmvzZPW3fGcqplfN/VQLGxwdWXYOqhrqLi/OZXJpUqzjn8n9/pIG2T/yUo=
+   - secure: D77e0PzL4PGPpZUdn4wT3zRpx4So3/T7Gl6eQG+NdTPBKr1SXJtTk/vrjVrktDYM7S1s+bxg4XZne49SAJlZSXAb1KnFu64DuXSne+B39rWQvZR1ir0WEnhUaTbRdIkcWhU72+PxkqpdX3nRHQuAjs92meI6NdA6qsJW6csLVmM+msZnAw1Y7se/MJyWJN02KufCx2XIpq7zhJRADwucHDVTwaavr7R43PWPsbjKzRsORFTUUg/xvSPsvdG4YD042BD/+dA141Goek3D+Eb/z6/Udnqy5CfrIBf02s6UtKdUh8gu2MuCI/VO6X34R72APC2Cq9igy4hm43BAH7rTlANHiSwquCLttuhXbpdqCt9kT2sAepEWDSCG6KDH8jLvcvUDBtlu9qO3suKbbMVt0Q/AKrgvFSCc1cNqzasvkVRCrUiUO3U1SCfIKDL5ZRi/kluU1Iy+HKT2Z+q9PE6MrMMBEQj3S58aEcTSmOYlJlEE/wWWNRikaFS6rfO74PAffKTXKSY2W/CreAhlxN1cfPP4K2sy4uv24k2XIH1bzuyWCiHTGKqd2VW32Z6XSznvsWSXXMf8bxkLhuXNlQlpv7DYxvJMLTcJsKvLbzwMiRcRj7HT80gRfVVYGuI5+ndYmEiRIlUqhPvQ57Bm60MWRJMem65P+dDLKAp3U/bWNT8=
+addons:
+  sonarcloud:
+    organization: "puneethkumarck-github"
+    token:
+      secure: $SONAR_TOKEN
+      
+sudo: required
+services:
+  - docker
+  
+deploy:
+  provider: script
+  script: "mvn -s .travis.settings.xml -DpushImage docker:build"
+  skip_cleanup: true
+  on:
+    branch: master
+#dd:
+ # secure: jjU7lovFB8l7Eh3ZE9iudDVmZWErygWsBzDiUVuruIRuBRzpYFt6GP/ZvIfzSdW4PI0H/3fGgL4Ug9eALNBSnwHCHM2pb424wdrdykSvGCHIcgZ52ga9dNsX7/mjBgrMVHtjUHCW8BUQBeXPRA2uGDauAYl+iVWuKKWcFFqdZq0iSLvZP33Y3aYjYo6QS/N6MVobrh82uNWp63pEzfo60TKxsDOWS5yoxR1W4KCZ4tOveei0AZBVvstFn3oPKX3+wLHf3+UWCC6jNBTqEmKtH6mrPpOV1lDcX7XyGHoQIw9AwYToh/Fm6dAEzVmy1SZ1wFN26cWepwuR6iIhy8Cz/LsfAA6osVLSH4JAbImP1G+Sr5BsBc5ab6VLmMIzMVGKRDJn+aQ1tr8BbdIkXWVl8GoOgMbtAnjZqGY3cxnpL+/hIQsWYVVDp5RUFMjgiYGlU3LEvXAK0unzs0o3hmw7oc+2O8jPYeSDdsECzewqrFBipwTB5fY/Lns/s7GXOnuZn251TLxyNW+akpadBeUGRMQyh04QGXXNxra9P8Ttp2OKioFMD51WcVNaSA32uNkHiP+we6IK/NYE5TCHA3lsFBkktgpdV8QNRrfB4a4uGT+YVhRhcnmvzZPW3fGcqplfN/VQLGxwdWXYOqhrqLi/OZXJpUqzjn8n9/pIG2T/yUo=
+#script:
+ #- ./mvnw clean install -B
+ #- ./mvnw clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar

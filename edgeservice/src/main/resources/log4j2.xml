@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+
+    <Properties>
+        <Property name="LOG_PATTERN">
+            %d{yyyy-MM-dd HH:mm:ss.SSS} %5p ${hostName} --- [%15.15t] %-40.40c{1.} : %m%n%ex
+        </Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="edge_service_console_appender" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+
+        <!-- Rolling File Appender -->
+        <!-- filePattern="logs/cwt_application-%d{yyyy-MM-dd}-%i.log"-->
+        <!--${sys:logs.dir}/${sys:appname}-%d{yyyy-MM-dd}-%i.log-->
+        <RollingFile name="edge_service_application_file" fileName="logs/edge_service_application.log"
+                     filePattern="logs/edge_service_-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout>
+                <Pattern>${LOG_PATTERN}</Pattern>
+            </PatternLayout>
+
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+        <Async name="edge-service-async" includeLocation="false" blocking="false">
+            <AppenderRef ref="edge_service_application_file"/>
+        </Async>
+
+    </Appenders>
+
+
+
+    <Loggers>
+        <Logger name="com.home.work" level="debug" additivity="false">
+            <AppenderRef ref="edge-service-async" />
+        </Logger>
+
+        <Logger name="org.springframework" level="debug" additivity="false">
+            <AppenderRef ref="edge-service-async"/>
+        </Logger>
+
+        <Root level="info">
+            <AppenderRef ref="edge_service_console_appender" />
+            <AppenderRef ref="edge-service-async"/>
+        </Root>
+
+    </Loggers>
+</Configuration>

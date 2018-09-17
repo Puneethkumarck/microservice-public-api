@@ -1,0 +1,27 @@
+server:
+  port: 8004
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: @project.artifactId@
+  datasource:
+    url: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
+
+eureka:
+  client:
+    healthcheck:
+       enabled: true
+    serviceUrl:
+       defaultZone: http://discovery:8761/eureka/
+  instance:
+    #leaseRenewalIntervalInSeconds: 5
+    preferIpAddress: true
+
+# to disable actuator endpoint security
+management:
+  security:
+    enabled: false
+
+

@@ -1,0 +1,166 @@
+{
+  "kind": "youtube#subscriptionListResponse",
+  "etag": "\"g7k5f8kvn67Bsl8L-Bum53neIr4/pK2Xc_H54bTEQc_8SVLk9k2EHRU\"",
+  "nextPageToken": "CAUQAA",
+  "pageInfo": {
+    "totalResults": 165,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#subscription",
+      "etag": "\"g7k5f8kvn67Bsl8L-Bum53neIr4/8rOhAlDjg1qIWXWBdXhqY3Mfs5o\"",
+      "id": "ZC9i-PNZ1jnfRyKfHBWR99X1vXlVn6C8WcgPo2SBCzA",
+      "snippet": {
+        "publishedAt": "2018-01-06T03:13:51.429Z",
+        "title": "Linus Tech Tips",
+        "description": "We make entertaining videos about technology, including tech reviews, showcases and other content.\n\nLinusTechTips@gmail.com - Business inquiries only. All others will be ignored.",
+        "resourceId": {
+          "kind": "youtube#channel",
+          "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+        },
+        "channelId": "UCvG1tb-HKBfYqIu1cVTQMeA",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/-QGhAvSy7npM/AAAAAAAAAAI/AAAAAAAAAAA/Uom6Bs6gR9Y/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/-QGhAvSy7npM/AAAAAAAAAAI/AAAAAAAAAAA/Uom6Bs6gR9Y/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/-QGhAvSy7npM/AAAAAAAAAAI/AAAAAAAAAAA/Uom6Bs6gR9Y/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+          }
+        }
+      },
+      "contentDetails": {
+        "totalItemCount": 4009,
+        "newItemCount": 0,
+        "activityType": "all"
+      }
+    },
+    {
+      "kind": "youtube#subscription",
+      "etag": "\"g7k5f8kvn67Bsl8L-Bum53neIr4/WvKuvX1zZmkXIotzqfguHGWYiI8\"",
+      "id": "ZC9i-PNZ1jnfRyKfHBWR94t5TWjbv9np5XOYxSGgAbM",
+      "snippet": {
+        "publishedAt": "2018-01-16T03:29:45.176Z",
+        "title": "NightHacking",
+        "description": "",
+        "resourceId": {
+          "kind": "youtube#channel",
+          "channelId": "UCT0bL2CQIk1eANeXk57mxaA"
+        },
+        "channelId": "UCvG1tb-HKBfYqIu1cVTQMeA",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/-uGI1mepeZ6k/AAAAAAAAAAI/AAAAAAAAAAA/POXskOqy658/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/-uGI1mepeZ6k/AAAAAAAAAAI/AAAAAAAAAAA/POXskOqy658/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/-uGI1mepeZ6k/AAAAAAAAAAI/AAAAAAAAAAA/POXskOqy658/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+          }
+        }
+      },
+      "contentDetails": {
+        "totalItemCount": 319,
+        "newItemCount": 0,
+        "activityType": "all"
+      }
+    },
+    {
+      "kind": "youtube#subscription",
+      "etag": "\"g7k5f8kvn67Bsl8L-Bum53neIr4/YwGMB3Q6YXj1ilWhCk9eTlN__RE\"",
+      "id": "ZC9i-PNZ1jnfRyKfHBWR9_ECgRJgAvJ2CktLVxfxKlc",
+      "snippet": {
+        "publishedAt": "2018-01-06T03:13:44.170Z",
+        "title": "Google Developers",
+        "description": "The Google Developers channel features talks from events, educational series, best practices, tips, and the latest updates across our products and platforms.",
+        "resourceId": {
+          "kind": "youtube#channel",
+          "channelId": "UC_x5XG1OV2P6uZZ5FSM9Ttw"
+        },
+        "channelId": "UCvG1tb-HKBfYqIu1cVTQMeA",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/-Fgp8KFpgQqE/AAAAAAAAAAI/AAAAAAAAAAA/Wyh1vV5Up0I/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/-Fgp8KFpgQqE/AAAAAAAAAAI/AAAAAAAAAAA/Wyh1vV5Up0I/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/-Fgp8KFpgQqE/AAAAAAAAAAI/AAAAAAAAAAA/Wyh1vV5Up0I/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+          }
+        }
+      },
+      "contentDetails": {
+        "totalItemCount": 4549,
+        "newItemCount": 0,
+        "activityType": "all"
+      }
+    },
+    {
+      "kind": "youtube#subscription",
+      "etag": "\"g7k5f8kvn67Bsl8L-Bum53neIr4/usofxNyMDtF94F7SPM3stlj8_D8\"",
+      "id": "ZC9i-PNZ1jlNwx1s3b2vRap03N01e7ajHFoNgmUguzA",
+      "snippet": {
+        "publishedAt": "2018-01-16T03:32:12.623Z",
+        "title": "SouJava",
+        "description": "História resumida do SouJava, atividades, eventos, discussões, participação na comunidade internacional, etc.\n\nAlgumas realizacoes do SouJava:\n\nJustJava\nCafé Brasil\nJavali – A Comunidade Java, Livre. Evento em conjunto com o FISL\nSou+Java – Encontro Internacional de Desenvolvedores Java\nMaratona 4 Java\nAbaporu – Java na Universidade\nJava Day, São Carlos\nMembro do JCP – primeiro JUG do mundo\nRegionais (Belem, Brasilia, Campinas, Rio)\nComunidade Mundial de Grupos de Usuários Java",
+        "resourceId": {
+          "kind": "youtube#channel",
+          "channelId": "UCH0qj1HFZ9jy0w87YfMSA7w"
+        },
+        "channelId": "UCvG1tb-HKBfYqIu1cVTQMeA",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/-P8f3-wsbB94/AAAAAAAAAAI/AAAAAAAAAAA/h9LHK3KxcQA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/-P8f3-wsbB94/AAAAAAAAAAI/AAAAAAAAAAA/h9LHK3KxcQA/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/-P8f3-wsbB94/AAAAAAAAAAI/AAAAAAAAAAA/h9LHK3KxcQA/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+          }
+        }
+      },
+      "contentDetails": {
+        "totalItemCount": 50,
+        "newItemCount": 0,
+        "activityType": "all"
+      }
+    },
+    {
+      "kind": "youtube#subscription",
+      "etag": "\"g7k5f8kvn67Bsl8L-Bum53neIr4/wPj_HdEwgjv7qMj-2fB0_Kf2Lp4\"",
+      "id": "ZC9i-PNZ1jnfRyKfHBWR93-phF346ZJGmqjJ0hEyw04",
+      "snippet": {
+        "publishedAt": "2018-01-16T03:31:35.098Z",
+        "title": "GOTO Conferences",
+        "description": "Created for developers, by developers, GOTO Conferences are focused on bringing the best minds in the software community and the most interesting topics to light. This channel features video interviews and presentations from GOTO Conferences and GOTO Nights.\n\nGOTO Conferences are produced by Trifork, a leading full service supplier of high-quality custom-built applications and end-to-end solutions.",
+        "resourceId": {
+          "kind": "youtube#channel",
+          "channelId": "UCs_tLP3AiwYKwdUHpltJPuA"
+        },
+        "channelId": "UCvG1tb-HKBfYqIu1cVTQMeA",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/-XQ8wVwqnakE/AAAAAAAAAAI/AAAAAAAAAAA/pqO6SOJJs6c/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/-XQ8wVwqnakE/AAAAAAAAAAI/AAAAAAAAAAA/pqO6SOJJs6c/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/-XQ8wVwqnakE/AAAAAAAAAAI/AAAAAAAAAAA/pqO6SOJJs6c/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+          }
+        }
+      },
+      "contentDetails": {
+        "totalItemCount": 873,
+        "newItemCount": 0,
+        "activityType": "all"
+      }
+    }
+  ]
+}

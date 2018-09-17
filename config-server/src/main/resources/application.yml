@@ -1,0 +1,34 @@
+---
+server:
+  port: 8000
+
+spring:
+  cloud:
+    config:
+      server:
+        encrypt: true
+        git:
+          uri: https://github.com/Puneethkumarck/spring-cloud-config-test.git # default
+          search-paths:
+            - 'microservice*'
+          repos:
+              local:
+                 pattern: '*/local'
+                 uri: https://github.com/Puneethkumarck/spring-cloud-config-test.git # alt
+                 search-paths:
+                  - 'microservice*'
+
+security:
+  basic:
+    enabled: false
+
+
+eureka:
+  client:
+    healthcheck:
+       enabled: true
+    serviceUrl:
+       defaultZone: http://discovery:8761/eureka/
+  instance:
+    #easeRenewalIntervalInSeconds: 5
+    preferIpAddress: true

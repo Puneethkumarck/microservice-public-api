@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: youtube-api
+  cloud:
+    config:
+      uri: http://configserver:8000
+  profiles:
+    active: dev
+encrypt:
+  failOnError: false

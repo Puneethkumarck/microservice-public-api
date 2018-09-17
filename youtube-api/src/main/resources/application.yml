@@ -1,0 +1,23 @@
+server:
+  port: 8003
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: @project.artifactId@
+  datasource:
+    url: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
+  instance:
+    preferIpAddress: true
+
+
+# to disable actuator endpoint security
+management:
+  security:
+    enabled: false
